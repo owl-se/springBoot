@@ -36,6 +36,10 @@ checkstyle {
 }
 
 dependencies {
+    compile "org.springframework:spring-context:$version.springframework"
+    compile "org.springframework:spring-jdbc:$version.springframework"
+    compile "org.springframework:spring-test:$version.springframework"
+    compile "org.springframework:spring-web:$version.springframework"
     implementation 'org.aspectj:aspectjweaver:1.9.4'
     implementation 'io.github.bonigarcia:webdrivermanager:3.6.1'
     compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
@@ -62,6 +66,8 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
     testCompile 'io.cucumber:cucumber-java:4.7.0'
     testCompile 'io.cucumber:cucumber-junit:4.7.0'
+    compile "io.cucumber:cucumber-java:$version.cucumber"
+    compile "io.cucumber:cucumber-spring:$version.cucumber"
 }
 
 group = 'com.sprng.boot'
